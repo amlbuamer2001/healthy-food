@@ -1,0 +1,123 @@
+/* <!-- ==================START NAVBAR============================ --> */
+
+#navbar .nav-item {
+    font-size: 16px;
+}
+
+#navbarNav .nav-link:hover::after,
+#navbarNav .nav-link.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: var(--text-main-color);
+    position: relative;
+    top: 1.375rem;
+}
+
+.dropdown-toggle::after {
+    border-top: none;
+}
+.dropdown-menu[data-bs-popper] {
+    right: 0rem;
+    left: auto;
+    top: 2.625rem;
+    border: none;
+    box-shadow: 1px 10px 18px -13px rgba(0,0,0,0.75);
+}
+
+#sidebar .nav-item a.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30%;
+    background-color: var(--text-main-color);
+    position: relative;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#sidebar .offcanvas {
+    background-image: url('../images/home/bg/healthy.webp');
+    margin: 8px;
+}
+
+#sidebar .offcanvas .ovarlay {
+    background-color: rgba(255, 255, 255, 0.938);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.close-sidebar {
+    width: 32px;
+    height: 32px;
+}
+
+/* <!-- ==================END NAVBAR============================== --> */
+/* <!-- ==================START HERO SECTION====================== --> */
+#hero-section {
+    background: url('../images/home/bg/Capture.webp') no-repeat;
+    background-size: 100% 100%;
+    min-height: calc(100vh - 119px);
+}
+
+#hero-section h1 {
+    font-size: 3.125rem;
+    letter-spacing: 0.1875rem;
+}
+
+#hero-section .hero-image-container {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    #hero-section .content {
+        padding: 1.25rem 0;
+        gap: .9375rem;
+    }
+
+    #hero-section .hero-text-container {
+        text-align: center;
+        align-items: center;
+    }
+
+    #hero-section .hero-text-container .fs-sm {
+        font-size: 1.75rem;
+    }
+
+    #hero-section .hero-text-container p:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+}
+
+/* Media Query for tablet Devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    #hero-section .hero-text-container .fs-sm {
+        font-size: 2.8125rem;
+    }
+}
+/* <!-- ==================END HERO SECTION============================ --> */
+
+/* <!-- ==================START SERVICES SECTION====================== --> */
+#services-section {
+    background: url('../images/services/bg/services-section.webp');
+    background-size: cover;
+    background-position: top center;
+}
+
+.services-layer {
+    background-color: rgba(0, 0, 0, 0.575);
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* <!-- ==================END SERVICES SECTION========================= --> */
