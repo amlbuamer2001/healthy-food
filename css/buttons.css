@@ -31,31 +31,35 @@
     position: absolute;
     width: 6.25rem;
     height: 100%;
-    background-image: linear-gradient(120deg,rgba(255, 255, 255, 0) 30%,rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0) 70%);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70%);
     top: 0;
     left: -6.25rem;
     opacity: 0.6;
 }
+
 .btn-solid-main:hover::before {
     animation: shine 1.5s ease-out infinite;
 }
 
-.btn-solid-main .icon {
+.btn-solid-main .right-arrow {
     transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-solid-main:hover .icon {
-    transform: translate(.25rem);
-  }
+}
 
-  .rtl .btn-solid-main .icon {
+.btn-solid-main:hover .right-arrow {
+    transform: translate(.25rem);
+}
+
+.btn-solid-main .left-arrow {
+    transition: all 0.3s ease-in-out;
+
     transform: rotate(-180deg);
-  }
-  .rtl .btn-solid-main:hover .icon {
+}
+
+.btn-solid-main:hover .left-arrow {
     transform: translateX(-0.25rem) rotate(-180deg);
 
 
-  }
+}
 
 
 @keyframes shine {
@@ -74,11 +78,12 @@
 
 .btn-outline-main {
     min-width: 7rem;
-    color: var(--text-main-color);
+    color: var(--grey-700);
     background-color: var(--text-white-color);
-    border-color: var(--text-main-color);
+    border: none;
+    box-shadow: 0px 2px 3px 3px #18181881;
     border-radius: var(--main-border-radius-shape);
-    padding: 0.65rem 1.25rem;
+    padding: .625rem 1.25rem;
     font-size: 1rem;
     position: relative;
     transition: all 0.4s ease-in-out;
@@ -90,7 +95,7 @@
 .btn-outline-main:focus-visible {
     color: var(--text-main-color);
     background-color: var(--text-white-color);
-    border-color: var(--text-main-color);
+    box-shadow: 0px 0px 25px -3px var(--bg-main-color);
 }
 
 .btn-solid-second {

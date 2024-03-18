@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/colors-classes.css">
+    <link rel="stylesheet" href="css/gallery-carousel.css">
+    <link rel="stylesheet" href="css/slider-carousel.css">
     <link rel="stylesheet" href="./css/home.css">
     <title>Healthy Meal</title>
     
@@ -109,9 +111,9 @@
             </div>
         </div>
         <!-- ==================END DOWNLOAD MOBILE==================== -->
-
         <!-- ==================START NAVBAR==================== -->
-         <nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0 w-100">
+        <nav id="navbar" class="navbar navbar-expand-lg position-sticky top-0 w-100">
+            <div class="scroll-watcher"></div>
             <div class="container">
                 <a href="#" title="logo">
                     <svg viewBox="0 0 200 200" width="50" height="50" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <style type="text/css"> .st0{fill:#71A517;} .st1{fill:#FAD50A;} .st2{fill:#FAD50A;stroke:#2B2B2B;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st3{fill:#FFFFFF;stroke:#2B2B2B;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st4{fill:#7B3D72;} .st5{fill:#F2433B;} .st6{fill:#F2433B;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st7{fill:#FFFFFF;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st8{fill:#DE3727;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st9{fill:#008553;} .st10{fill:#008553;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st11{fill:#003A52;} .st12{fill:#7B3D72;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st13{fill:#2B2B2B;} .st14{fill:none;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st15{fill:#F78D0F;} .st16{fill:#F78D0F;stroke:#2B2B2B;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <g> <circle class="st9" cx="100" cy="100" r="78.6"></circle> <g> <path class="st10" d="M131.1,49.2C49.8,79.3,68.9,150.8,68.9,150.8S141.2,135.3,131.1,49.2z"></path> <g> <circle class="st7" cx="85.9" cy="123" r="8.6"></circle> <circle class="st7" cx="100" cy="100" r="8.6"></circle> <circle class="st7" cx="114.1" cy="77" r="8.6"></circle> </g> </g> </g> </g></svg>
@@ -187,7 +189,7 @@
                                 </a>
                               </li>
                               <li class="optionsList">
-                                <a class="dropdown-item d-flex align-items-center" href="./homeAR.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                     <svg width="25px" height="25px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ED2939" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"></path><path fill="#002495" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path><path fill="#EEE" d="M12 5h12v26H12z"></path></g></svg>
                                     <span class="ms-2">
                                         France
@@ -195,7 +197,7 @@
                                 </a>
                               </li>
                               <li class="optionsList">
-                                <a class="dropdown-item d-flex align-items-center" href="./homeAR.html">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130 120" enable-background="new 0 0 130 120" xml:space="preserve" width="25px" height="25px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <rect x="-350" y="-1350" fill="#ffffff" width="2180" height="1700"></rect> </g> <g> <g> <rect fill="#DC4437" width="130" height="120"></rect> <polygon fill="#FCBE1F" points="31,14.5 36.9,27 50,29 40.5,38.8 42.7,52.5 31,46 19.3,52.5 21.5,38.8 12,29 25.1,27 "></polygon> <polygon fill="#FCBE1F" points="60.5,8 62.8,12.9 68,13.7 64.2,17.6 65.1,23 60.5,20.4 55.9,23 56.8,17.6 53,13.7 58.2,12.9 "></polygon> <polygon fill="#FCBE1F" points="64.5,25.8 66.8,30.8 72,31.6 68.2,35.4 69.1,40.8 64.5,38.3 59.9,40.8 60.8,35.4 57,31.6 62.2,30.8 "></polygon> <polygon fill="#FCBE1F" points="60.5,44 62.8,48.9 68,49.7 64.2,53.6 65.1,59 60.5,56.4 55.9,59 56.8,53.6 53,49.7 58.2,48.9 "></polygon> </g> </g> <g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
                                     <span class="ms-2">
                                         China
@@ -294,7 +296,7 @@
                                         </a>
                                       </li>
                                       <li class="optionsList">
-                                        <a class="dropdown-item d-flex align-items-center" href="./homeAR.html">
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
                                             <svg width="25px" height="25px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path fill="#ED2939" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"></path><path fill="#002495" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path><path fill="#EEE" d="M12 5h12v26H12z"></path></g></svg>
                                             <span class="ms-2">
                                                 France
@@ -302,7 +304,7 @@
                                         </a>
                                       </li>
                                       <li class="optionsList">
-                                        <a class="dropdown-item d-flex align-items-center" href="./homeAR.html">
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 130 120" enable-background="new 0 0 130 120" xml:space="preserve" width="25px" height="25px" fill="#000000"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <rect x="-350" y="-1350" fill="#ffffff" width="2180" height="1700"></rect> </g> <g> <g> <rect fill="#DC4437" width="130" height="120"></rect> <polygon fill="#FCBE1F" points="31,14.5 36.9,27 50,29 40.5,38.8 42.7,52.5 31,46 19.3,52.5 21.5,38.8 12,29 25.1,27 "></polygon> <polygon fill="#FCBE1F" points="60.5,8 62.8,12.9 68,13.7 64.2,17.6 65.1,23 60.5,20.4 55.9,23 56.8,17.6 53,13.7 58.2,12.9 "></polygon> <polygon fill="#FCBE1F" points="64.5,25.8 66.8,30.8 72,31.6 68.2,35.4 69.1,40.8 64.5,38.3 59.9,40.8 60.8,35.4 57,31.6 62.2,30.8 "></polygon> <polygon fill="#FCBE1F" points="60.5,44 62.8,48.9 68,49.7 64.2,53.6 65.1,59 60.5,56.4 55.9,59 56.8,53.6 53,49.7 58.2,48.9 "></polygon> </g> </g> <g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
                                             <span class="ms-2">
                                                 China
@@ -337,7 +339,7 @@
                             </p>
                             <button class="btn-solid-main fs-5">
                                 Shop Now
-                                <svg fill="currentColor" viewBox="0 0 24 24" class="icon"  width="30px" height="30px"> 
+                                <svg fill="currentColor" viewBox="0 0 24 24" class="right-arrow"  width="30px" height="30px"> 
                                     <path
                                       clip-rule="evenodd"
                                       d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
@@ -367,7 +369,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="d-flex flex-column align-items-center py-5 text-white-color">
-                                <h2 class="text-capitalize fw-bold fs-1">
+                                <h2 class="text-section text-capitalize fw-bold fs-1">
                                     best services
                                 </h2>
                                 <p>
@@ -427,10 +429,140 @@
         </section>
         <!-- ==================END SERVICES SECTION============ -->
 
-        <!-- ==================STAR NEW SECTION============ -->
-        
-        <!-- ==================END NEW SECTION============ -->
+        <!-- ==================STAR GALLERY SECTION============ -->
+        <section id="gallery-section">
+            <div class="gallery-layer py-3">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex flex-column align-items-center text-white-color py-3">
+                                <h2 class="text-section text-capitalize fw-bold fs-1 text-main-color">
+                                    food gallery
+                                </h2>
+                                <p class="text-main-color">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset class="gallery-images gap-4">
+                        <label style="background-image:url(./images/gallery/dish1.webp)">
+                            <input type="radio" name="images" value="dish1">
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish2.webp)">
+                            <input type="radio" name="images" value="dish2" checked>
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish3.webp)">
+                        <input type="radio" name="images" value="dish3">
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish4.webp)">
+                        <input type="radio" name="images" value="dish4">
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish5.webp)">
+                        <input type="radio" name="images" value="dish5">
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <!-- ==================END GALLERY SECTION============ -->
+
+        <!-- ==================START SLIDER SECTION============ -->
+        <section id="slider-section" class="py-5 py-lg-3 position-relative">
+            <div class="container py-lg-2 py-md-5">
+                <div class="slider">
+                   <div class="slide-item" style="background-image: url(images/gallery/matcha.jpg)">
+                        <div class="slide-caption text-white-color">
+                            <h2 class="fw-bold text-capitalize name">
+                                healthy coffe
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
+                            </p>
+                            <button class="btn-outline-main fw-bold">
+                                see more
+                            </button>
+                        </div>
+                   </div>
+                   <div class="slide-item" style="background-image: url(images/gallery/juice.jpg)">
+                    <div class="slide-caption text-white-color">
+                        <h2 class="fw-bold text-capitalize name">
+                            smoothe
+                        </h2>
+                        <p class="desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
+                        </p>
+                        <button class="btn-outline-main fw-bold">
+                            see more
+                        </button>
+                    </div>
+                    </div>
+                    <div class="slide-item" style="background-image: url(images/gallery/dessert.jpg)">
+                        <div class="slide-caption text-white-color">
+                            <h2 class="fw-bold  text-capitalize name">
+                                desserts
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
+                            </p>
+                            <button class="btn-outline-main fw-bold">
+                                see more
+                            </button>
+                        </div>
+                   </div>
+                   <div class="slide-item" style="background-image: url(images/gallery/nature.jpg)">
+                    <div class="slide-caption text-white-color">
+                        <h2 class="fw-bold text-capitalize name">
+                            natural drinks
+                        </h2>
+                        <p class="desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
+                        </p>
+                        <button class="btn-outline-main fw-bold">
+                            see more
+                        </button>
+                    </div>
+                    </div>
+                    <div class="slide-item" style="background-image: url(images/gallery/icecream.jpg)">
+                        <div class="slide-caption text-white-color">
+                            <h2 class="fw-bold text-capitalize name">
+                                ice cream
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
+                            </p>
+                            <button class="btn-outline-main fw-bold">
+                                see more
+                            </button>
+                        </div>
+                   </div>
+                   <div class="slide-item" style="background-image: url(images/gallery/juice.jpg)">
+                        <div class="slide-caption text-white-color">
+                            <h2 class="fw-bold text-capitalize name">
+                                juices
+                            </h2>
+                            <p class="desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
+                            </p>
+                            <button class="btn-outline-main fw-bold">
+                                see more
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider-button d-flex justify-content-center py-4 py-lg-0">
+                    <button class="btn-solid-main d-flex justify-content-between">
+                        <i class="prev  px-3 fa-solid fa-arrow-left"></i>
+                        <i class="next px-3 fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- ==================END SLIDER SECTION============== -->
+       
     </main>
+    <script src="js/slider.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

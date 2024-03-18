@@ -1,53 +1,72 @@
 /* START SCROLL */
 
 ::-webkit-scrollbar {
-    width: 0.3125rem;
+  width: 0.3125rem;
+}
+
+::-moz-scrollbar {
+  width: 0.3125rem;
+}
+
+::-o-scrollbar {
+  width: 0.3125rem;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-moz-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-o-scrollbar:horizontal {
+  height: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-o-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-main-color);
+  opacity: 0.7;
+}
+
+::-moz-scrollbar-thumb {
+  background: var(--bg-main-color);
+  opacity: 0.7;
+}
+
+::-o-scrollbar-thumb {
+  background: var(--bg-main-color);
+  opacity: 0.7;
+}
+
+.scroll-watcher {
+  height: .1875rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: var(--bg-main-color);
+  transform-origin: left;
+  transform: scale(0, 1);
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    transform: scale(1, 1);
   }
-  
-  ::-moz-scrollbar {
-    width: 0.3125rem;
-  }
-  
-  ::-o-scrollbar {
-    width: 0.3125rem;
-  }
-  
-  ::-webkit-scrollbar:horizontal {
-    height: 0.25rem;
-  }
-  
-  ::-moz-scrollbar:horizontal {
-    height: 0.25rem;
-  }
-  
-  ::-o-scrollbar:horizontal {
-    height: 0.25rem;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  ::-moz-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  ::-o-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--bg-main-color);
-    opacity: 0.7;
-  }
-  
-  ::-moz-scrollbar-thumb {
-    background: var(--bg-main-color);
-    opacity: 0.7;
-  }
-  
-  ::-o-scrollbar-thumb {
-    background: var(--bg-main-color);
-    opacity: 0.7;
-  }
-  /* END SCROLL */
+}
+
+/* END SCROLL */
