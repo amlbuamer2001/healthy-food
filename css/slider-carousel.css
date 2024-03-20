@@ -71,7 +71,9 @@
 }
 
 .slider-button i:active {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color:var(--grey-100) !important;
+    background-color: var(--text-main-color);
 }
 
 .slide-caption {
