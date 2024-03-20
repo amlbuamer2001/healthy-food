@@ -122,11 +122,18 @@
     font-size: 3.125rem;
     letter-spacing: 0.1875rem;
 }
-
+.rtl #hero-section .fs-md {
+    letter-spacing: 0;
+}
 #hero-section .hero-image-container {
     width: 90%;
     display: block;
     margin: auto;
+
+}
+.rtl #hero-section .hero-image-container {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 
 }
 .hero-image-container img:hover {

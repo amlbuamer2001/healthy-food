@@ -24,8 +24,7 @@
     <!-- ===== Font Used ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
     <!-- ===== favIcon Used ===== -->
     <link rel="shortcut icon" href="./images/home/icons/kale-icon.svg" type="image/x-icon">
     <!-- ===== canonical ===== -->
@@ -36,6 +35,8 @@
     <link rel="stylesheet" href="./css/scrollbar.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/colors-classes.css">
+    <link rel="stylesheet" href="css/gallery-carousel.css">
+    <link rel="stylesheet" href="css/slider-carousel.css">
     <link rel="stylesheet" href="./css/home.css">
     <title>الطعام الصحي</title>
     
@@ -214,8 +215,8 @@
 
         <!-- ==================START SIDEBAR==================== -->
         <aside id="sidebar">
-            <div class="offcanvas offcanvas-start border-0 rounded-5" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptions">
-                <div class="ovarlay border-0 rounded-5"></div>
+            <div class="offcanvas offcanvas-start  border-0 rounded-5 overflow-hidden" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptions">
+                <div class="transparent-layer"></div>
                 <div class="offcanvas-header position-relative d-flex justify-content-end">
                         <button type="button" class="close-sidebar border-0 rounded bg-success text-white-color" data-bs-dismiss="offcanvas" aria-label="Close">
                             <i class="fas fa-times"></i>
@@ -363,23 +364,19 @@
 
         <!-- ==================SRART SERVICES SECTION========== -->
         <section id="services-section">
-            <div class="services-layer">
+            <div class="transparent-layer">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="d-flex flex-column align-items-center py-5 text-white-color">
-                                <h2 class="text-section text-capitalize fw-bold fs-1">
-                                    افضل خدماتنا
-                                </h2>
-                                <p>
-                                    نحن نأخذ عملك الممتع على محمل الجد!
-                                </p>
-                            </div>
-                        </div>
+                    <div class="d-flex flex-column align-items-center py-5 text-white-color">
+                        <h2 class="header-transition text-section text-capitalize fw-bold fs-1">
+                            افضل خدماتنا
+                        </h2>
+                        <p>
+                            نحن نأخذ عملك الممتع على محمل الجد!
+                        </p>
                     </div>
                     <div class="row pb-5">
                         <div class="col-md-3">
-                            <div class="text-white-color text-center m-2">
+                            <div class="service-item p-3 text-white-color text-center m-2">
                                 <i class="fa-solid fa-cake-candles"></i>
                                 <p class="text-capitalize fw-bold fs-5">
                                     حفلة اعياد الميلاد
@@ -390,7 +387,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="text-white-color text-center m-2">
+                            <div class="service-item p-3 text-white-color text-center m-2">
                                 <i class="fa-solid fa-cake-candles"></i>
                                 <p class="text-capitalize fw-bold fs-5">
                                     حفلة الأحداث
@@ -401,7 +398,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="text-white-color text-center m-2">
+                            <div class="service-item p-3 text-white-color text-center m-2">
                                 <i class="fa-solid fa-cake-candles"></i>
                                 <p class="text-capitalize fw-bold fs-5">
                                     عشاء خاص
@@ -412,7 +409,7 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="text-white-color text-center m-2">
+                            <div class="service-item p-3 text-white-color text-center m-2">
                                 <i class="fa-solid fa-cake-candles"></i>
                                 <p class="text-capitalize fw-bold fs-5">
                                     المناسبات الخيرية
@@ -428,11 +425,147 @@
         </section>
         <!-- ==================END SERVICES SECTION============ -->
 
-        <!-- ==================STAR NEW SECTION============ -->
+        <!-- ==================STAR GALLERY SECTION============ -->
+        <section id="gallery-section">
+            <div class="gallery-layer py-3">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex flex-column align-items-center text-center text-white-color py-3">
+                                <h2 class="header-transition text-capitalize fw-bold fs-1 text-main-color">
+                                    معرض الطعام
+                                </h2>
+                                <p class="text-main-color">
+                                    نحن نقدم لعملائنا قوائم طعام مبتكرة، متوافقة مع أعلى متطلبات النظافة والسلامة
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset class="gallery-images gap-4">
+                        <label style="background-image:url(./images/gallery/dish1.webp)">
+                            <input type="radio" name="images" value="dish1">
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish2.webp)">
+                            <input type="radio" name="images" value="dish2" checked>
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish3.webp)">
+                        <input type="radio" name="images" value="dish3">
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish4.webp)">
+                        <input type="radio" name="images" value="dish4">
+                        </label>
+                        <label style="background-image:url(./images/gallery/dish5.webp)">
+                        <input type="radio" name="images" value="dish5">
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+        </section> 
+        <!-- ==================END GALLERY SECTION============ -->
+          <!-- ==================START SLIDER SECTION============ -->
+        <section id="slider-section">
+            <div class="transparent-layer pt-5">
+                <div class="d-flex flex-column align-items-center text-center text-white-color py-3">
+                    <h2 class="header-transition text-capitalize fw-bold fs-1 text-main-color">
+                        التصنيفات
+                    </h2>
+                    <p class="text-main-color">
+                        طعامك ومشروبك المفضل، باردًا أو ساخنًا، وطازجًا
+                    </p>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide-item" style="background-image: url(images/gallery/matcha.webp)">
+                                <div class="slide-caption text-white-color">
+                                    <h2 class="fw-bold text-capitalize name">
+                                        شاي الماتشا
+                                    </h2>
+                                    <p class="desc pt-3">
+                                        استمتع بشرب شاي ماتشا الأخضر من اكبر تشكيلة المشروبات من الطعام الصحي, احصل علي اعلي جودة شاي ماتشا الأخضر واستمتع بأرخص الاسعار.               
+                                    </p>
+                                    <button class="btn-outline-main fw-bold">
+                                        شاهد المزيد
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="slide-item" style="background-image: url(images/gallery/juice.webp)">
+                            <div class="slide-caption text-white-color">
+                                <h2 class="fw-bold text-capitalize name">
+                                    العصائر
+                                </h2>
+                                <p class="desc pt-3">
+                                    استمتع بشرب شاي ماتشا الأخضر من اكبر تشكيلة المشروبات من الطعام الصحي, احصل علي اعلي جودة شاي ماتشا الأخضر واستمتع بأرخص الاسعار.               
+                                </p>
+                                <button class="btn-outline-main fw-bold">
+                                    شاهد المزيد
+                                </button>
+                            </div>
+                            </div>
+                            <div class="slide-item" style="background-image: url(images/gallery/dessert.webp)">
+                                <div class="slide-caption text-white-color">
+                                    <h2 class="fw-bold  text-capitalize name">
+                                        الحلويات
+                                    </h2>
+                                    <p class="desc pt-3">
+                                        استمتع بشرب شاي ماتشا الأخضر من اكبر تشكيلة المشروبات من الطعام الصحي, احصل علي اعلي جودة شاي ماتشا الأخضر واستمتع بأرخص الاسعار.               
+                                    </p>
+                                    <button class="btn-outline-main fw-bold">
+                                        شاهد المزيد
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="slide-item" style="background-image: url(images/gallery/nature.webp)">
+                            <div class="slide-caption text-white-color">
+                                <h2 class="fw-bold text-capitalize name">
+                                    مشروبات طبيعية
+                                </h2>
+                                <p class="desc pt-3">
+                                    استمتع بشرب شاي ماتشا الأخضر من اكبر تشكيلة المشروبات من الطعام الصحي, احصل علي اعلي جودة شاي ماتشا الأخضر واستمتع بأرخص الاسعار.               
+                                </p>
+                                <button class="btn-outline-main fw-bold">
+                                    شاهد المزيد
+                                </button>
+                            </div>
+                            </div>
+                            <div class="slide-item" style="background-image: url(images/gallery/icecream.webp)">
+                                <div class="slide-caption text-white-color">
+                                    <h2 class="fw-bold text-capitalize name">
+                                        الايس كريم
+                                    </h2>
+                                    <p class="desc pt-3">
+                                        استمتع بشرب شاي ماتشا الأخضر من اكبر تشكيلة المشروبات من الطعام الصحي, احصل علي اعلي جودة شاي ماتشا الأخضر واستمتع بأرخص الاسعار.               
+                                    </p>
+                                    <button class="btn-outline-main fw-bold">
+                                        شاهد المزيد
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="slide-item" style="background-image: url(images/gallery/smoothe.webp)">
+                                <div class="slide-caption text-white-color">
+                                    <h2 class="fw-bold text-capitalize name">
+                                        سموزي
+                                    </h2>
+                                    <p class="desc pt-3">
+                                        استمتع بشرب شاي ماتشا الأخضر من اكبر تشكيلة المشروبات من الطعام الصحي, احصل علي اعلي جودة شاي ماتشا الأخضر واستمتع بأرخص الاسعار.               
+                                    </p>
+                                    <button class="btn-outline-main fw-bold">
+                                        شاهد المزيد
+                                    </button>
+                                </div>
+                            </div>
         
-        <!-- ==================END NEW SECTION============ -->
+                        </div>
+                        <div class="slider-button d-flex justify-content-center">
+                                <i class="prev p-2 mx-2 bg-grey-100 text-main-color rounded px-3 fa-solid fa-arrow-left"></i>
+                                <i class="next p-2 mx-2 bg-grey-100 text-main-color rounded px-3 fa-solid fa-arrow-right"></i>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================END SLIDER SECTION============== -->
     </main>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
