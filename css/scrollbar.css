@@ -61,6 +61,7 @@
   transform: scale(0, 1);
   animation: scroll-watcher linear;
   animation-timeline: scroll();
+  /* overflow: hidden; */
 }
 
 @keyframes scroll-watcher {
