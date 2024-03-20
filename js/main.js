@@ -9,8 +9,8 @@ window.addEventListener('scroll', () => {
 let options=document.querySelector('.dropdown-menu');
 let optionsList=document.querySelector('.optionsList');
 let optionsearch=document.querySelector('.search')
-optionsearch.addEventListener('keyup',searchLang())
-function searchLang(){
+optionsearch.addEventListener('keyup',function searchLang(){
+
   let filter = optionsearch.value.toLowerCase();
   let li=options.getElementsByClassName('optionsList');
   for (let i = 0; i < li.length; i++) {
@@ -23,4 +23,4 @@ function searchLang(){
 
       }
     }
-  }
+  })
