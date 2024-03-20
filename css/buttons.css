@@ -16,7 +16,7 @@
     outline: none;
     overflow: hidden;
     font-size: .9375rem;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 .btn-solid-main:hover,
@@ -87,7 +87,7 @@
     font-size: 1rem;
     position: relative;
     transition: all 0.4s ease-in-out;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .btn-outline-main:hover,
@@ -98,7 +98,7 @@
     box-shadow: 0px 0px 25px -3px var(--bg-main-color);
 }
 
-.btn-solid-second {
+/* .btn-solid-second {
     min-width: 7rem;
     color: var(--text-white-color);
     background-color: var(--text-secondary-color);
@@ -133,56 +133,11 @@
     position: relative;
     transition: all 0.4s ease-in-out;
     z-index: 1;
-}
-
-.btn-solid-secondary:hover,
-.btn-solid-secondary:focus {
-    color: var(--text-desc-color);
-    background-color: var(--bg-secondary-color);
-}
-
-.btn-outline-secondary {
-    color: var(--text-secondary-color);
-    background-color: var(--text-white-color);
-    border-color: var(--text-secondary-color);
-    border-radius: var(--main-border-radius-shape);
-    padding: 0.65rem 1.25rem;
-    font-size: 1rem;
-    position: relative;
-    transition: all 0.4s ease-in-out;
-    z-index: 1;
-}
+} */
 
 .btn:disabled,
 .btn:disabled:hover {
     opacity: 0.65;
     background-color: var(--bg-main-color);
     color: var(--text-white-color);
-}
-
-.form-btn {
-    height: 3.6rem;
-}
-
-.btn-card {
-    min-width: 2.5rem;
-    height: 2.5rem;
-    line-height: 0;
-    border-radius: var(--main-border-radius-shape);
-    padding: 0 .9375rem;
-    border: none;
-}
-
-.btn-solid-danger,
-.btn-solid-danger:hover {
-    min-width: 7rem;
-    color: #f37070;
-    background-color: #fdeaea;
-    border-color: #fdeaea;
-    border-radius: var(--main-border-radius-shape);
-    padding: 0.65rem 1.25rem;
-    font-size: 1rem;
-    position: relative;
-    transition: all 0.4s ease-in-out;
-    z-index: 1;
 }

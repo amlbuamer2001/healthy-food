@@ -1,6 +1,5 @@
 const navbar = document.getElementById('navbar');
 const topbar = document.getElementById('topbar');
-// const dropdown=document.querySelector('.dropdown');
 window.addEventListener('scroll', () => {
   if (window.scrollY > topbar.offsetHeight) {
     navbar.classList.add('bg-white');
@@ -10,8 +9,8 @@ window.addEventListener('scroll', () => {
 let options=document.querySelector('.dropdown-menu');
 let optionsList=document.querySelector('.optionsList');
 let optionsearch=document.querySelector('.search')
-
-optionsearch.addEventListener('keyup',function(){
+optionsearch.addEventListener('keyup',searchLang())
+function searchLang(){
   let filter = optionsearch.value.toLowerCase();
   let li=options.getElementsByClassName('optionsList');
   for (let i = 0; i < li.length; i++) {
@@ -24,6 +23,4 @@ optionsearch.addEventListener('keyup',function(){
 
       }
     }
-    
-  })
-
+  }

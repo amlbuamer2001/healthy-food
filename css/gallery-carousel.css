@@ -1,4 +1,6 @@
 /* <!-- ==================STAR GALLERY SECTION========================= --> */
+@import "https://unpkg.com/open-props";
+
 #gallery-section {
     background-image: url('../images/home/bg/healthy.webp');
 }
@@ -18,37 +20,38 @@
     grid-auto-flow: column;
     grid-template-rows: 60vh;
     border: none;
-
-    &:has(label:nth-child(1) > input:checked) {
-        --col-1: 5fr;
-        --col-2: 3fr;
-    }
-
-    &:has(label:nth-child(2) > input:checked) {
-        --col-1: 2fr;
-        --col-2: 5fr;
-        --col-3: 2fr;
-    }
-
-    &:has(label:nth-child(3) > input:checked) {
-        --col-2: 2fr;
-        --col-3: 5fr;
-        --col-4: 2fr;
-    }
-
-    &:has(label:nth-child(4) > input:checked) {
-        --col-3: 2fr;
-        --col-4: 5fr;
-        --col-5: 2fr;
-    }
-
-    &:has(label:nth-child(5) > input:checked) {
-        --col-4: 3fr;
-        --col-5: 5fr;
-    }
 }
 
-fieldset label {
+.gallery-images:has(label:nth-child(1) > input:checked) {
+    --col-1: 5fr;
+    --col-2: 3fr;
+}
+
+.gallery-images:has(label:nth-child(2) > input:checked) {
+    --col-1: 2fr;
+    --col-2: 5fr;
+    --col-3: 2fr;
+}
+
+.gallery-images:has(label:nth-child(3) > input:checked) {
+    --col-2: 2fr;
+    --col-3: 5fr;
+    --col-4: 2fr;
+}
+
+.gallery-images:has(label:nth-child(4) > input:checked) {
+    --col-3: 2fr;
+    --col-4: 5fr;
+    --col-5: 2fr;
+}
+
+.gallery-images:has(label:nth-child(5) > input:checked) {
+    --col-4: 3fr;
+    --col-5: 5fr;
+}
+
+
+.gallery-images label {
     background-size: auto 100%;
     background-position: center;
     cursor: pointer;
@@ -56,27 +59,27 @@ fieldset label {
     -webkit-box-shadow: 0rem .125rem .3125rem .1875rem rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0rem .125rem .3125rem .1875rem rgba(0, 0, 0, 0.75);
     box-shadow: 0rem .125rem .3125rem .1875rem rgba(0, 0, 0, 0.75);
-
-    &:focus-within {
-        outline: .0625rem solid var(--bg-dark-color);
-        outline-offset: .3125rem;
-    }
 }
 
-fieldset input {
-    opacity: 0;
+.gallery-images label:focus-within {
+    outline: .0625rem solid var(--bg-dark-color);
+    outline-offset: .3125rem;
+}
+
+#gallery-section input[type="radio"] {
+    display: none;
 }
 
 /* Media Query for Mobile Devices */
 @media screen and (min-width: 0px) and (max-width: 576px) {
     #gallery-section .gallery-images {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-auto-flow: row;
-        
+
     }
 
-    fieldset label {
+    .gallery-images label {
         height: 320px;
     }
 }
@@ -85,11 +88,11 @@ fieldset input {
 @media screen and (min-width: 577px) and (max-width: 992px) {
     #gallery-section .gallery-images {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-auto-flow: row;
     }
 
-    fieldset label {
+    .gallery-images label {
         height: 31.25rem;
     }
 }
