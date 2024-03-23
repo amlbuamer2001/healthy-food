@@ -163,6 +163,19 @@
 
 /* <!-- ==================END HERO SECTION============================ --> */
 
+/* <!-- ==================START ABOUT SECTION====================== --> */
+ #about-section{
+    background: url('../images/home/bg/healthy.webp');
+}
+.about-image-container{
+    width: 450px;
+    display: block;
+    /* filter: drop-shadow(0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.281)); */
+}
+
+
+/* <!-- ==================END ABOUT SECTION============================ --> */
+
 /* <!-- ==================START SERVICES SECTION====================== --> */
 #services-section {
     background: url('../images/services/bg/services-section.webp');

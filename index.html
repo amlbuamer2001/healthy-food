@@ -134,18 +134,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#about-section">
+                                About us                                
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#services-section">
                                 Services
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                About us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Shop
+                            <a class="nav-link" href="#gallery-section">
+                                Gallery
                             </a>
                         </li>
                         <li class="nav-item">
@@ -241,18 +241,18 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="#about-section">
+                                        About us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="#services-section">
                                         Services
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        Shop
+                                    <a class="nav-link" href="#gallery-section">
+                                        Gallery
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -362,6 +362,48 @@
         </section>
         <!-- ==================END HERO SECTION================ -->
 
+        <!-- ==================STAR ABOUT SECTION============ -->
+        <section id="about-section">
+            <div class="transparent-layer">
+                <div class="container pt-4">
+                    <div class="d-flex flex-column align-items-center text-center text-white-color pt-3">
+                        <h2 class="header-transition text-capitalize fw-bold fs-1 text-main-color">
+                            about us
+                        </h2>
+                        <p class="text-main-color pb-md-5 pb-lg-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="row align-items-center pt-5 py-md-5 py-lg-0 g-5 g-md-0">
+                        <div class="col-md-6 order-md-2 order-1">
+                            <div class="about-item d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                                <p class="fs-4 fw-bold text-capitalize text-grey-700">
+                                    why choose us?
+                                </p>
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est explicabo id impedit accusantium obcaecati ipsa dolor illum repudiandae recusandae ipsam.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis adipisci molestiae libero est fuga veniam impedit magni aut, soluta autem molestias, esse illo omnis veritatis tenetur dolor minima minus, ullam rerum harum inventore vel eligendi. Deleniti placeat maxime doloribus optio, qui natus incidunt cum a error suscipit ducimus molestias!
+                                </p>
+                                <button class="btn-outline-main mt-3 fs-5">order now</button>
+                                <!-- <img src="images/gallery/about3.png" class="amml d-flex justify-content-end" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-1">
+                            <div class="about-item d-flex justify-content-start">
+                                <picture class="about-image-container">
+                                    <img srcset="./images/gallery/woman.png 320w, ./images/gallery/woman.png 480w, ./images/gallery/woman.png 700w"
+                                        sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                                        src="./images/gallery/woman.png"
+                                        onerror="this.src='./images/gallery/woman.png';" alt="about image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- ==================END ABOUT SECTION============ -->
+
         <!-- ==================SRART SERVICES SECTION========== -->
         <section id="services-section">
             <div class="transparent-layer">
@@ -428,7 +470,7 @@
 
         <!-- ==================STAR GALLERY SECTION============ -->
         <section id="gallery-section">
-            <div class="gallery-layer py-3">
+            <div class="transparent-layer py-3">
                 <div class="container py-4">
                     <div class="row">
                         <div class="col-md-12">
@@ -443,20 +485,76 @@
                         </div>
                     </div>
                     <fieldset class="gallery-images gap-4">
-                        <label style="background-image:url(./images/gallery/dish1.webp)">
-                            <input type="radio" name="images" value="dish1">
+
+                        <label for="dish1" style="background-image:url(./images/gallery/dish1.webp)" class="position-relative">
+                            <input type="radio" name="images" value="dish1" id="dish1">
+                            <span class="gallery-caption fs-3 position-absolute text-center text-capitalize">
+                                <span class="fs-3">
+                                    pasta
+                                </span>
+                                <span class="my-3 fs-6">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                                </span>
+                                <a href="#" class="btn-outline-main text-capitalize">
+                                    order now
+                                </a>
+                            </span>
                         </label>
-                        <label style="background-image:url(./images/gallery/dish2.webp)">
-                            <input type="radio" name="images" value="dish2" checked>
+                        <label for="dish2" style="background-image:url(./images/gallery/dish2.webp)" class="position-relative">
+                            <input type="radio" name="images" value="dish2" checked id="dish2">
+                            <span class="gallery-caption fs-3 position-absolute text-center text-capitalize">
+                                <span class="fs-3">
+                                    pasta
+                                </span>
+                                <span class="my-3 fs-6">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                                </span>
+                                <a href="#" class="btn-outline-main text-capitalize">
+                                    order now
+                                </a>
+                            </span>
                         </label>
-                        <label style="background-image:url(./images/gallery/dish3.webp)">
-                        <input type="radio" name="images" value="dish3">
+                        <label for="dish3" style="background-image:url(./images/gallery/dish3.webp)"  class="position-relative">
+                        <input type="radio" name="images" value="dish3" id="dish3">
+                        <span class="gallery-caption fs-3 position-absolute text-center text-capitalize">
+                            <span class="fs-3">
+                                pasta
+                            </span>
+                            <span class="my-3 fs-6">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </span>
+                            <a href="#" class="btn-outline-main text-capitalize">
+                                order now
+                            </a>
+                        </span>
                         </label>
-                        <label style="background-image:url(./images/gallery/dish4.webp)">
-                        <input type="radio" name="images" value="dish4">
+                        <label for="dish4" style="background-image:url(./images/gallery/dish4.webp)"  class="position-relative">
+                        <input type="radio" name="images" value="dish4" id="dish4">
+                        <span class="gallery-caption fs-3 position-absolute text-center text-capitalize">
+                            <span class="fs-3">
+                                pasta
+                            </span>
+                            <span class="my-3 fs-6">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </span>
+                            <a href="#" class="btn-outline-main text-capitalize">
+                                order now
+                            </a>
+                        </span>
                         </label>
-                        <label style="background-image:url(./images/gallery/dish5.webp)">
-                        <input type="radio" name="images" value="dish5">
+                        <label for="dish5" style="background-image:url(./images/gallery/dish5.webp)"  class="position-relative">
+                        <input type="radio" name="images" value="dish5" id="dish5">
+                        <span class="gallery-caption fs-3 position-absolute text-center text-capitalize">
+                            <span class="fs-3">
+                                pasta
+                            </span>
+                            <span class="my-3 fs-6">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                            </span>
+                            <a href="#" class="btn-outline-main text-capitalize">
+                                order now
+                            </a>
+                        </span>
                         </label>
                     </fieldset>
                 </div>
@@ -485,7 +583,7 @@
                                     <p class="desc pt-3">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
                                     </p>
-                                    <button class="btn-outline-main fw-bold">
+                                    <button class="btn-outline-main">
                                         see more
                                     </button>
                                 </div>
@@ -498,7 +596,7 @@
                                 <p class="desc pt-3 pt-3">
                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, rerum laboriosam. Numquam consequatur laboriosam ea.
                                 </p>
-                                <button class="btn-outline-main fw-bold">
+                                <button class="btn-outline-main">
                                     see more
                                 </button>
                             </div>
@@ -558,8 +656,8 @@
         
                         </div>
                         <div class="slider-button d-flex justify-content-center">
-                                <i class="prev p-2 mx-2 bg-grey-100 text-main-color rounded px-3 fa-solid fa-arrow-left"></i>
-                                <i class="next p-2 mx-2 bg-grey-100 text-main-color rounded px-3 fa-solid fa-arrow-right"></i>
+                                <i class="prev p-2 mx-2 bg-second-color text-main-color rounded px-3 fa-solid fa-arrow-left"></i>
+                                <i class="next p-2 mx-2 bg-second-color text-main-color rounded px-3 fa-solid fa-arrow-right"></i>
                         </div>
                 </div>
             </div>
