@@ -142,3 +142,6 @@
 .border-danger-color {
   border-color: var(--text-danger-color) !important;
 }
+.rating-color{
+  color: var(--rating-color);
+}

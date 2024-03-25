@@ -58,6 +58,11 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.bg-pattern{
+    background-image: url('./../images/home/bg/healthy.webp');
+}
+
 .transparent-layer {
     background-color: rgba(255, 255, 255, 0.938);
     right: 0;

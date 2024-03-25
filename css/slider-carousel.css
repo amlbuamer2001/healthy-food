@@ -1,8 +1,4 @@
 /* <!-- ==================START SLIDER SECTION========================= --> */
-#slider-section {
-    background-image: url('../images/home/bg/healthy.webp');
-}
-
 .slider-container {
     position: relative;
     /* width: 100vw; */
@@ -104,8 +100,6 @@
 
 .slider-button i:active {
     transform: scale(1.1);
-    color: var(--grey-100) !important;
-    background-color: var(--text-main-color);
 }
 
 .slide-caption {

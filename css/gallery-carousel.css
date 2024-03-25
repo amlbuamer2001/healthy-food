@@ -1,10 +1,6 @@
 /* <!-- ==================STAR GALLERY SECTION========================= --> */
 @import "https://unpkg.com/open-props";
 
-#gallery-section {
-    background-image: url('../images/home/bg/healthy.webp');
-}
-
 #gallery-section .gallery-images {
     display: grid;
     grid-template-columns: var(--col-1, 1fr) var(--col-2, 1fr) var(--col-3, 1fr) var(--col-4, 1fr) var(--col-5, 1fr);

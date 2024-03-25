@@ -41,16 +41,8 @@
 }
 
 #sidebar .offcanvas {
-    background-image: url('../images/home/bg/healthy.webp');
     margin: .5rem;
     width: 20rem;
-}
-
-#sidebar .offcanvas .transparent-layer {
-    position: absolute;
-    /* background-color: rgba(255, 255, 255, 0.938); */
-    /* position: absolute; */
-    
 }
 
 .close-sidebar {
@@ -59,7 +51,7 @@
 }
 
 .dropdown-toggle::after {
-    border-top: none;
+    color: var(--text-main-color);
 }
 
 .scrollable-menu {
@@ -107,13 +99,13 @@
 /* <!-- ==================END NAVBAR============================== --> */
 /* <!-- ==================START HERO SECTION====================== --> */
 #hero-section {
-    background: url('../images/home/bg/green-bg-en.webp') no-repeat;
+    background: url('./../images/home/bg/green-bg-en.webp') no-repeat;
     background-size: 100% 100%;
     min-height: calc(100vh - 7.4375rem);
 }
 
 .rtl #hero-section {
-    background: url('../images/home/bg/green-bg-ar.webp') no-repeat;
+    background: url('./../images/home/bg/green-bg-ar.webp') no-repeat;
     background-size: 100% 100%;
     min-height: calc(100vh - 7.4375rem);
 }
@@ -163,22 +155,9 @@
 
 /* <!-- ==================END HERO SECTION============================ --> */
 
-/* <!-- ==================START ABOUT SECTION====================== --> */
- #about-section{
-    background: url('../images/home/bg/healthy.webp');
-}
-.about-image-container{
-    width: 450px;
-    display: block;
-    /* filter: drop-shadow(0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.281)); */
-}
-
-
-/* <!-- ==================END ABOUT SECTION============================ --> */
-
 /* <!-- ==================START SERVICES SECTION====================== --> */
 #services-section {
-    background: url('../images/services/bg/services-section.webp');
+    background: url('./../images/services/bg/services-section.webp');
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -188,8 +167,12 @@
     background-color: rgba(0, 0, 0, 0.575);
 }
 
-#services-section .service-item:hover {
-    box-shadow: 0rem .125rem .3125rem .1875rem var(--bg-white-color);
+/* <!-- ==================END SERVICES SECTION========================= --> */
+
+/* <!-- ==================START TEAM SECTION====================== --> */
+
+#team-section .team-info{
+    border: 1px solid;
 }
 
-/* <!-- ==================END SERVICES SECTION========================= --> */
+/* <!-- ==================END TEAM SECTION====================== --> */
