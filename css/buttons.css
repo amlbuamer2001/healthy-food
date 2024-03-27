@@ -99,6 +99,17 @@
     font-weight: bold;
 }
 
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    padding:0;
+    border-radius: 50%;
+    display: none;
+    z-index: 2;
+  }
 /* .btn-solid-second {
     min-width: 7rem;
     color: var(--text-white-color);
