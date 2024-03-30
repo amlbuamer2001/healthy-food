@@ -61,6 +61,9 @@
     right: 0rem;
     left: auto;
     top: 2.5rem;
+    min-width: 5rem;
+    min-height: 7.875rem;
+
 }
 
 .dropdown-menu::-webkit-scrollbar-thumb {

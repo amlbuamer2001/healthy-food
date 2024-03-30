@@ -95,6 +95,10 @@
     filter: drop-shadow(0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.281));
 }
 
+.rtl .about-secondary-image-bottom {
+    left: 90px;
+}
+
 .image-bottom-video{
     display: flex;
     justify-content: center;
@@ -108,4 +112,12 @@
     border-radius: 50%;
 }
 
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .about-secondary-image-bottom {
+        left: 136px;
+    }
+    .rtl .about-secondary-image-bottom {
+        left: 50px;
+    }
+}
 /* <!-- ==================END ABOUT SECTION============================ --> */

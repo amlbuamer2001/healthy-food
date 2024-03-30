@@ -66,24 +66,24 @@
 }
 
 .rtl #slider-section .slide-item:nth-child(3) {
-    right: calc(50% + 12.5rem);
+    right: 50%;
 }
 
 .rtl #slider-section .slide-item:nth-child(4) {
     background-size: cover;
-    right: calc(50% + 25.625rem);
+    right: calc(50% + 13.125rem);
 
 }
 
 .rtl #slider-section .slide-item:nth-child(5) {
     background-size: cover;
-    right: calc(50% + 38.75rem);
+    right: calc(50% + 26.25rem);
 
 }
 
 .rtl #slider-section .slide-item:nth-child(6) {
     background-size: cover;
-    right: calc(50% + 51.875rem);
+    left: calc(50% + 39.375rem);
     opacity: 0;
 }
 
